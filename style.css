@@ -1,14 +1,80 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
+.container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.7fr 0.4fr;
+  grid-template-rows: 0.4fr 0.8fr 9.5fr 5fr 1.5fr 0.1fr;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "header header header header"
+    "aside content1 content1 content2"
+    "aside content3 content4 content2"
+    "aside content5 content6 content6"
+    "footer footer footer footer";
+  gap: 0.5rem;
+  text-align: center;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+nav {
   width: 100%;
   background-color: #555;
   overflow: auto;
+  margin-bottom: 0 !important;
+  grid-area: navbar;
+}
+
+header {
+  grid-area: header;
+  background: lightcoral;
+}
+
+aside {
+  grid-area: aside;
+  background: lightcoral;
+}
+
+.content1 {
+  grid-area: content1;
+  background: lightcoral;
+}
+
+.content2 {
+  background: lightcoral;
+  grid-area: content2;
+}
+
+.content3 {
+  grid-area: content3;
+  background: lightcoral;
+}
+
+.content4 {
+  grid-area: content4;
+  background: lightcoral;
+}
+
+.content5 {
+  grid-area: content5;
+  background: lightcoral;
+}
+
+.content6 {
+  grid-area: content6;
+  background: lightcoral;
+}
+
+footer {
+  grid-area: footer;
+  background: lightcoral;
 }
 
 .navbar a {

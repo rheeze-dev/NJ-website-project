@@ -10,7 +10,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.7fr 0.3fr;
-  grid-template-rows: 0.4fr 0.8fr 9.5fr 5fr 1.5fr 0.1fr;
+  grid-template-rows: 0.4fr 0.8fr 9.5fr 4.8fr 1.5fr 0.1fr;
   grid-template-areas:
     "navbar navbar navbar navbar"
     "header header header header"
@@ -70,7 +70,47 @@ aside {
 
 .content5 {
   grid-area: content5;
-  background: lightcoral;
+  /* background: lightcoral; */
+  text-align: center;
+  /* margin: 30px 0; */
+  width: 100%;
+}
+
+.h3-text {
+  margin: 5px !important;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.icon-link {
+  color: #333;
+  font-size: 48px; /* Increase icon size */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #007bff; /* Change to your brand color on hover */
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Adjust icon size and spacing */
+.icon-link i {
+  font-size: 30px; /* Make the icons bigger */
+}
+
+/* Add padding and spread the icons out */
+.icon-container a {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .content6 {
@@ -224,7 +264,7 @@ img {
 }
 
 .h1-text {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .content4 h4 {

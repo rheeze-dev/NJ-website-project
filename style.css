@@ -334,6 +334,46 @@ a:hover {
   text-decoration: underline;
 }
 
+aside {
+  grid-area: aside;
+  position: relative;
+  height: 100vh;
+  padding: 20px;
+}
+
+aside button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 10px;
+  z-index: 1000;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+aside button:first-child {
+  top: 150px;
+}
+
+aside button:last-child {
+  bottom: 150px;
+}
+
+aside button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;

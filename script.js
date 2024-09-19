@@ -71,3 +71,17 @@ async function getNewsApi() {
 document.querySelector(
   "#footer"
 ).innerHTML = `<span>Copyright ${new Date().getFullYear()}</span>`;
+
+// Scroll to the top when the top button is clicked
+document
+  .querySelector("aside button:first-child")
+  .addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+// Scroll to the bottom when the bottom button is clicked
+document
+  .querySelector("aside button:last-child")
+  .addEventListener("click", function () {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  });

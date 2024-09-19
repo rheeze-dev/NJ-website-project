@@ -52,8 +52,8 @@ async function getNewsApi() {
   } on ${new Date(data.articles[i].publishedAt).toLocaleDateString()}.`;
   document.querySelector(
     "#author-api"
-  ).innerHTML = `<h4>Authors: ${data.articles[i].author} 
-  <a href="${data.articles[i].url}" target="_blank">Click here to check news.</a></h4></h4>`;
+  ).innerHTML = `<h4>Authors: ${data.articles[i].author}.
+  <a href="${data.articles[i].url}" target="_blank"> Click here to check news.</a></h4></h4>`;
   // Increase i after 10 seconds, and loop back if i exceeds the article count
   setTimeout(() => {
     i++;

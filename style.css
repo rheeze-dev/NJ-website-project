@@ -34,21 +34,21 @@ nav {
 
 header {
   grid-area: header;
-  background: lightcoral;
+  /* background: lightcoral; */
 }
 
 aside {
   grid-area: aside;
-  background: lightcoral;
+  /* background: lightcoral; */
 }
 
 .content1 {
   grid-area: content1;
-  background: lightcoral;
+  /* background: lightcoral; */
 }
 
 .content2 {
-  background: lightcoral;
+  /* background: lightcoral; */
   grid-area: content2;
   text-align: left;
   padding-left: 15px; /* Removes extra padding on the left */
@@ -115,12 +115,12 @@ aside {
 
 .content6 {
   grid-area: content6;
-  background: lightcoral;
+  /* background: lightcoral; */
 }
 
 footer {
   grid-area: footer;
-  background: lightcoral;
+  /* background: lightcoral; */
 }
 
 .navbar a {
@@ -294,6 +294,44 @@ img {
   padding: 20px;
   max-width: 600px;
   border-left: 4px solid #007bff;
+}
+
+/* General Styling */
+.h3-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.news-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.news-info {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 500px) {

@@ -67,3 +67,7 @@ async function getNewsApi() {
     getNewsApi(); // Recursive call to keep updating the news
   }, 100000); // 10 seconds interval
 }
+
+document.querySelector(
+  "#footer"
+).innerHTML = `<span>Copyright ${new Date().getFullYear()}</span>`;

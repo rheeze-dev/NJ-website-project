@@ -10,7 +10,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.7fr 0.3fr;
-  grid-template-rows: 0.4fr 0.8fr 9.5fr 4.8fr 1.5fr 0.1fr;
+  grid-template-rows: 0.2fr 0.6fr 5.5fr 2.8fr 1.5fr 0.2fr;
   grid-template-areas:
     "navbar navbar navbar navbar"
     "header header header header"
@@ -25,32 +25,40 @@ body {
 }
 
 nav {
+  position: fixed !important; /* Fixed position for the navbar */
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #555;
   overflow: auto;
   margin-bottom: 0 !important;
   grid-area: navbar;
+  z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 header {
   grid-area: header;
-  /* background: lightcoral; */
+  background-color: #f8f9fa; /* Light background for the header */
+  padding: 0;
+  border-bottom: 1px solid #e1e1e1; /* Subtle border at the bottom */
 }
 
 aside {
   grid-area: aside;
-  /* background: lightcoral; */
+  position: relative;
+  height: 100vh;
+  padding: 20px;
 }
 
 .content1 {
   grid-area: content1;
-  /* background: lightcoral; */
 }
 
 .content2 {
-  /* background: lightcoral; */
   grid-area: content2;
   text-align: left;
+  background-color: #f5f5f5;
+
   padding-left: 15px; /* Removes extra padding on the left */
 }
 
@@ -70,14 +78,26 @@ aside {
 
 .content5 {
   grid-area: content5;
-  /* background: lightcoral; */
+  background-color: #f5f5f5;
   text-align: center;
   /* margin: 30px 0; */
   width: 100%;
 }
 
+.content6 {
+  grid-area: content6;
+  background-color: #f5f5f5;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
 .h3-text {
-  margin: 5px !important;
+  /* margin: 5px !important; */
+  padding-top: 8px;
 }
 
 .icon-container {
@@ -86,11 +106,12 @@ aside {
   align-items: center;
   width: 100%;
   padding: 0;
+  gap: 20px;
 }
 
 .icon-link {
   color: #333;
-  font-size: 48px; /* Increase icon size */
+  font-size: 100px; /* Increase icon size */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -101,7 +122,7 @@ aside {
 
 /* Adjust icon size and spacing */
 .icon-link i {
-  font-size: 30px; /* Make the icons bigger */
+  font-size: inherit; /* Make the icons bigger */
 }
 
 /* Add padding and spread the icons out */
@@ -110,17 +131,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-}
-
-.content6 {
-  grid-area: content6;
-  /* background: lightcoral; */
-}
-
-footer {
-  grid-area: footer;
-  /* background: lightcoral; */
+  padding: 20px;
 }
 
 .navbar a {
@@ -233,7 +244,7 @@ img {
   display: flex;
   justify-content: center; /* Centers the icons horizontally */
   align-items: center;
-  gap: 30px; /* Adjusts the spacing between the icons */
+  gap: 40px; /* Adjusts the spacing between the icons */
   flex-wrap: nowrap; /* Ensures that the icons stay in one row */
 }
 
@@ -241,17 +252,18 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px; /* Adjust width to fit all items in one row */
+  width: 200px; /* Adjust width to fit all items in one row */
+  text-align: center;
 }
 
 .service-item i {
-  font-size: 80px; /* Icon size */
+  font-size: 100px; /* Icon size */
   color: #007bff;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .service-item a {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   color: #333;
@@ -305,24 +317,13 @@ img {
 }
 
 .news-box {
-  background-color: #f8f9fa;
-  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
-.news-title {
-  font-size: 18px;
-  font-weight: 500;
-  color: #007bff;
+.news {
   margin-bottom: 10px;
-}
-
-.news-info {
-  font-size: 16px;
-  color: #6c757d;
-  margin-bottom: 15px;
+  padding: 0 20px;
 }
 
 a {
@@ -334,18 +335,11 @@ a:hover {
   text-decoration: underline;
 }
 
-aside {
-  grid-area: aside;
-  position: relative;
-  height: 100vh;
-  padding: 20px;
-}
-
 aside button {
   width: 50px;
   height: 50px;
   position: fixed;
-  left: 10px;
+  left: 20px;
   z-index: 1000;
   border: none;
   background-color: rgba(0, 0, 0, 0.5);
@@ -359,7 +353,7 @@ aside button {
 }
 
 aside button:first-child {
-  top: 150px;
+  top: 200px;
 }
 
 aside button:last-child {
@@ -372,6 +366,37 @@ aside button:hover {
 
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 27px;
+}
+
+.header-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark color for text */
+  margin-right: 20px;
+}
+
+.header-logo {
+  width: 50px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 500px) {

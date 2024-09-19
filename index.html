@@ -25,7 +25,10 @@
         <a class="pull-right" href="/index.html">Contact</a>
       </nav>
       <header>
-        <img src="/nj-logo.png" alt="nj-logo" style="width: 80px" />
+        <div class="header-container">
+          <span class="header-text">Welcome to New Jersey!</span>
+          <img src="/nj-logo.png" alt="nj-logo" class="header-logo" />
+        </div>
       </header>
       <aside>
         <button id="topButton" class="btn btn-default">
@@ -100,15 +103,31 @@
             >
           </li>
           <li>
-            <a href="https://oceancityvacation.com/" target="_blank">Clifton</a>
-          </li>
-          <li>
             <a href="https://www.townofmorristown.org/" target="_blank"
               >Morristown</a
             >
           </li>
           <li>
             <a href="https://www.hobokengirl.com/" target="_blank">Hoboken</a>
+          </li>
+          <li>
+            <a href="https://voorheesnj.com/" target="_blank">Vorhees</a>
+          </li>
+          <li>
+            <a href="https://www.eastrutherfordnj.net/" target="_blank"
+              >East Rutherford</a
+            >
+          </li>
+          <li>
+            <a href="https://www.sayreville.com/" target="_blank">Sayreville</a>
+          </li>
+          <li>
+            <a href="https://www.longbranch.org/" target="_blank"
+              >Long Branch</a
+            >
+          </li>
+          <li>
+            <a href="https://www.teanecknj.gov/" target="_blank">Teaneck</a>
           </li>
           <li>
             <a href="https://www.bayonnenj.org/" target="_blank">Bayonne</a>
@@ -326,8 +345,9 @@
       <div class="content6">
         <h3 class="h3-text text-center">Latest News</h3>
         <div id="news-container" class="news-box">
-          <h5 id="content-api" class="news-title"></h5>
-          <h5 id="info-api" class="news-info"></h5>
+          <h5 id="content-api" class="news"></h5>
+          <h5 id="info-api" class="news"></h5>
+          <h5 id="author-api" class="news"></h5>
         </div>
       </div>
       <footer id="footer"></footer>

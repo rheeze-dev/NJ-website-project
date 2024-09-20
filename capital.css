@@ -9,15 +9,14 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 0.1fr 1fr 0.7fr 0.3fr;
-  grid-template-rows: 0.2fr 0.6fr 5.5fr 2.8fr 1.5fr 0.2fr;
+  grid-template-columns: 0.35fr 4fr 1.2fr;
+  grid-template-rows: 0.2fr 0.6fr 5.8fr 2.4fr 0.2fr;
   grid-template-areas:
-    "navbar navbar navbar navbar"
-    "header header header header"
-    "aside content1 content1 content2"
-    "aside content3 content4 content2"
-    "aside content5 content6 content6"
-    "footer footer footer footer";
+    "navbar navbar navbar"
+    "header header header"
+    "aside content1 content2"
+    "aside content3 content4"
+    "footer footer footer";
   gap: 0.5rem;
   text-align: center;
   width: 100% !important;
@@ -58,7 +57,6 @@ aside {
   grid-area: content2;
   text-align: left;
   background-color: #f5f5f5;
-
   padding-left: 15px; /* Removes extra padding on the left */
 }
 
@@ -76,19 +74,6 @@ aside {
   text-align: center;
 }
 
-.content5 {
-  grid-area: content5;
-  background-color: #f5f5f5;
-  text-align: center;
-  /* margin: 30px 0; */
-  width: 100%;
-}
-
-.content6 {
-  grid-area: content6;
-  background-color: #f5f5f5;
-}
-
 footer {
   grid-area: footer;
   background-color: #f5f5f5;
@@ -96,7 +81,6 @@ footer {
 }
 
 .h3-text {
-  /* margin: 5px !important; */
   padding-top: 8px;
 }
 
@@ -385,44 +369,10 @@ html {
   height: auto; /* Maintain aspect ratio */
 }
 
-@media (max-width: 1600px) {
-  .container {
-    grid-template-columns: 0.16fr 0.5fr 1fr 0.4fr;
-    grid-template-rows: 0.2fr 0.6fr 5.5fr 2.8fr 1.5fr 0.2fr;
-  }
-
-  .icon-link {
-    font-size: 50px !important;
-  }
-
-  .header-container {
-    text-align: center;
-  }
-
-  .header-text {
-    margin-bottom: 10px;
-  }
-
-  h4 {
-    font-size: 16px !important;
-  }
-
-  a {
-    font-size: 15px !important;
-  }
-}
-
 @media (max-width: 1400px) {
   .container {
-    grid-template-columns: 1fr 0.7fr 0.4fr;
-    grid-template-rows: 0.2fr 0.6fr 5.5fr 2.8fr 1.5fr 0.2fr;
-    grid-template-areas:
-      "navbar navbar navbar"
-      "header header header"
-      "content1 content1 content2"
-      "content3 content4 content2"
-      "content5 content6 content6"
-      "footer footer footer";
+    grid-template-columns: 0.22fr 3.5fr 1.3fr;
+    grid-template-rows: 0.2fr 0.7fr 5.8fr 2fr 0.2fr;
   }
 
   aside {
@@ -430,11 +380,11 @@ html {
   }
 
   .icon-link {
-    font-size: 40px !important;
+    font-size: 60px !important;
   }
 
   .service-item i {
-    font-size: 70px; /* Icon size */
+    font-size: 70px;
   }
 
   h4 {
@@ -453,19 +403,19 @@ html {
 @media (max-width: 1250px) {
   .container {
     grid-template-columns: auto auto;
-    grid-template-rows: 0.1fr 0.25fr 2.1fr 0.4fr 0.3fr 0.2fr 0.1fr;
+    grid-template-rows: 0.1fr 0.35fr 2.9fr 1.2fr 0.3fr 0.1fr;
     grid-template-areas:
       "navbar navbar"
       "header header"
       "content1 content1"
       "content2 content2"
       "content3 content4"
-      "content5 content6"
       "footer footer";
   }
 
   .content2 {
     column-count: 3;
+    padding: 40px;
   }
 
   aside {
@@ -476,7 +426,7 @@ html {
 @media (max-width: 1100px) {
   .container {
     grid-template-columns: auto;
-    grid-template-rows: 0.1fr 0.3fr 2fr 1.3fr 0.8fr 0.7fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.23fr 1.3fr 1fr 0.4fr 0.4fr 0.1fr;
     grid-template-areas:
       "navbar"
       "header"
@@ -484,8 +434,6 @@ html {
       "content2"
       "content3"
       "content4"
-      "content5"
-      "content6"
       "footer";
   }
 

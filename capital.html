@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Jersey</title>
+    <link rel="stylesheet" href="capital.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <button class="menu-toggle" onclick="toggleNavbar()">☰ Menu</button> -->
+      <nav class="navbar">
+        <a class="nav" id="home-page" href="index.html">Home</a>
+        <a class="nav" id="capital-page" href="capital.html">Capital</a>
+        <a class="nav" id="cities-page" href="cities.html">Cities</a>
+        <a class="nav pull-right" id="contact-page" href="contact.html"
+          >Contact</a
+        >
+      </nav>
+      <header>
+        <div class="header-container">
+          <span class="header-text">Welcome to Trenton!</span>
+          <img src="/trenton-logo.jpg" alt="nj-logo" class="header-logo" />
+        </div>
+      </header>
+      <aside>
+        <button id="topButton" class="btn btn-default">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </button>
+        <button id="bottomButton" class="btn btn-default">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </button>
+      </aside>
+      <div class="content1" id="home-section">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="/nj-carousel-1.jpg" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/nj-carousel-2.jpg" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/nj-carousel-3.jpg" />
+          </div>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class="content2" id="capital-section">
+        <h1>About Trenton</h1>
+        <ul>
+          <li>Population: 90,871</li>
+          <li>City incorporated: November 13, 1792</li>
+          <li>Region of the State: Central Jersey</li>
+          <li>Classification of City: Urban</li>
+          <li>Average income: $49,117</li>
+          <li>Employment rate: 56.5%</li>
+          <li>Health care coverage: 26.5%</li>
+          <li>Median age: 33.7 y/o</li>
+          <li>Cost of living: Fairly affordable</li>
+          <li>Poverty rate: 26.2%</li>
+          <li>Median Property value: $111,200</li>
+          <li>Median Property taxes: $12,313</li>
+          <li>Employed population: 36,327</li>
+          <li>Citizenship: 82.5%</li>
+          <li>Foreign-Born Population: 26.1%</li>
+          <li>Home ownership: 38.3%</li>
+          <li>Home owners with mortgage: 64.5%</li>
+          <li>Drove alone: 57.6%</li>
+          <li>Carpooled: 22.2%</li>
+          <li>Public Transit: 7.29%</li>
+          <li>Uninsured: 14.5%</li>
+          <li>Medicaid: 36.1%</li>
+          <li>Non-group: 8.65%</li>
+          <li>Employer coverage: 31%</li>
+          <li>Medicare: 9.44%</li>
+          <li>Military or VA: 0.265%</li>
+        </ul>
+      </div>
+      <div class="content3" id="cities-section">
+        <h1 class="h1-text">Services</h1>
+        <div class="service-list">
+          <div class="service-item">
+            <i class="fas fa-paw"></i>
+            <a href="https://www.trentonnj.org/FAQ.aspx?TID=21" target="_blank"
+              >Pet license</a
+            >
+          </div>
+          <div class="service-item">
+            <i class="fas fa-ring"></i>
+            <a href="https://www.trentonnj.org/FAQ.aspx?TID=24" target="_blank"
+              >Mariage License</a
+            >
+          </div>
+          <div class="service-item">
+            <i class="fas fa-certificate"></i>
+            <a href="https://www.trentonnj.org/FAQ.aspx?TID=19" target="_blank"
+              >Birth Certificate</a
+            >
+          </div>
+          <div class="service-item">
+            <i class="fas fa-briefcase"></i>
+            <a
+              href="https://nj-trenton.civicplus.com/344/Division-of-Personnel"
+              target="_blank"
+              >Employment Opportunities</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="content4" id="arts-section">
+        <h3 class="h3-text">Follow Us</h3>
+        <div class="icon-container">
+          <!-- Facebook Icon -->
+          <a
+            href="https://www.facebook.com/cityoftrentonnj/"
+            target="_blank"
+            class="icon-link"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- Instagram Icon -->
+          <a
+            href="https://www.instagram.com/cityoftrentonnj/"
+            target="_blank"
+            class="icon-link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- Twitter (X) Icon -->
+          <a
+            href="https://x.com/i/flow/login?redirect_after_login=%2Fcityoftrentonnj"
+            target="_blank"
+            class="icon-link"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+    <script src="capital.js"></script>
+  </body>
+</html>

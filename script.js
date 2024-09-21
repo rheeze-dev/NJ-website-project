@@ -108,7 +108,6 @@ function updateActiveClass() {
     navLinks.contact.classList.add("active");
   }
 }
-
 // Call on initial load
 updateActiveClass();
 
@@ -121,15 +120,3 @@ Object.values(navLinks).forEach((link) => {
 
 // Event listener for URL changes (for back/forward navigation)
 window.addEventListener("popstate", updateActiveClass);
-
-// document.getElementById("menu-toggle").addEventListener("click", function () {
-//   const navbar = document.getElementById("navbar");
-//   // Toggle the display property between 'none' and 'block'
-//   if (navbar.style.display === "none" || navbar.style.display === "") {
-//     navbar.style.display = "block"; // Show the navbar
-//     this.textContent = "Hide Navbars"; // Change button text
-//   } else {
-//     navbar.style.display = "none"; // Hide the navbar
-//     this.textContent = "Show Navbars"; // Change button text
-//   }
-// });

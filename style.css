@@ -10,7 +10,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.7fr 0.3fr;
-  grid-template-rows: 0.2fr 0.6fr 5.5fr 2.8fr 1.5fr 0.2fr;
+  grid-template-rows: 0.2fr 0.6fr 6fr 2.4fr 1.4fr 0.2fr;
   grid-template-areas:
     "navbar navbar navbar navbar"
     "header header header header"
@@ -64,14 +64,14 @@ aside {
 
 .content3 {
   grid-area: content3;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   background-color: #f5f5f5;
   text-align: center;
 }
 
 .content4 {
   grid-area: content4;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   background-color: #f5f5f5;
   text-align: center;
 }
@@ -238,6 +238,7 @@ img {
   align-items: center;
   gap: 40px; /* Adjusts the spacing between the icons */
   flex-wrap: nowrap; /* Ensures that the icons stay in one row */
+  padding-top: 40px;
 }
 
 .service-item {
@@ -268,7 +269,7 @@ img {
 }
 
 .h1-text {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .content4 h4 {

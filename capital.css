@@ -10,7 +10,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 0.35fr 4fr 1.2fr;
-  grid-template-rows: 0.2fr 0.6fr 5.8fr 2.4fr 0.2fr;
+  grid-template-rows: 0.2fr 0.65fr 5.8fr 1.7fr 0.2fr;
   grid-template-areas:
     "navbar navbar navbar"
     "header header header"
@@ -69,7 +69,7 @@ aside {
 
 .content4 {
   grid-area: content4;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   background-color: #f5f5f5;
   text-align: center;
 }
@@ -78,10 +78,6 @@ footer {
   grid-area: footer;
   background-color: #f5f5f5;
   padding: 10px;
-}
-
-.h3-text {
-  padding-top: 8px;
 }
 
 .icon-container {
@@ -95,7 +91,7 @@ footer {
 
 .icon-link {
   color: #333;
-  font-size: 70px; /* Increase icon size */
+  font-size: 60px; /* Increase icon size */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -235,7 +231,7 @@ img {
 }
 
 .service-item i {
-  font-size: 100px; /* Icon size */
+  font-size: 50px; /* Icon size */
   color: #007bff;
   margin-bottom: 15px;
 }
@@ -254,7 +250,7 @@ img {
 }
 
 .h1-text {
-  margin-bottom: 50px;
+  margin: 0 0 20px 0;
 }
 
 .content4 h4 {
@@ -288,10 +284,8 @@ img {
 
 /* General Styling */
 .h3-text {
-  font-size: 24px;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin: 0 0 20px 0;
 }
 
 .news-box {
@@ -381,11 +375,11 @@ html {
   }
 
   .icon-link {
-    font-size: 60px !important;
+    font-size: 50px !important;
   }
 
   .service-item i {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   h4 {

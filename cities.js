@@ -93,52 +93,53 @@ function updateJerseyCity() {
           <img src="/jersey-city.png" alt="nj-logo" class="header-logo" />`;
   carousel.innerHTML = `<div class="mySlides fade">
             <div class="numbertext">1 / 10</div>
-            <img class="img1" src="/jersey-city-img/greetings.png" />
+            <img class="img1" src="/jersey-city-img/greetings.png" alt="jersey-city-greetings"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">2 / 10</div>
-            <img class="img2" src="/jersey-city-img/1.png" />
+            <img class="img2" src="/jersey-city-img/1.png" alt="jersey-city-img1"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">3 / 10</div>
-            <img class="img3" src="/jersey-city-img/2.png" />
+            <img class="img3" src="/jersey-city-img/2.png" 
+            alt="jersey-city-img2"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">4 / 10</div>
-            <img class="img1" src="/jersey-city-img/3.png" />
+            <img class="img1" src="/jersey-city-img/3.png" alt="jersey-city-img3"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">5 / 10</div>
-            <img class="img2" src="/jersey-city-img/4.jpg" />
+            <img class="img2" src="/jersey-city-img/4.jpg" alt="jersey-city-img4"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">6 / 10</div>
-            <img class="img3" src="/jersey-city-img/5.png" />
+            <img class="img3" src="/jersey-city-img/5.png" alt="jersey-city-img5"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">7 / 10</div>
-            <img class="img3" src="/jersey-city-img/6.png" />
+            <img class="img3" src="/jersey-city-img/6.png" alt="jersey-city-img6"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">8 / 10</div>
-            <img class="img1" src="/jersey-city-img/7.png" />
+            <img class="img1" src="/jersey-city-img/7.png" alt="jersey-city-img7"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">9 / 10</div>
-            <img class="img2" src="/jersey-city-img/8.png" />
+            <img class="img2" src="/jersey-city-img/8.png" alt="jersey-city-img18/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">10 / 10</div>
-            <img class="img3" src="/jersey-city-img/9.png" />
+            <img class="img3" src="/jersey-city-img/9.png" alt="jersey-city-img9"/>
           </div>`;
   services.innerHTML = `<div class="service-item">
           <i class="fas fa-paw"></i>
@@ -169,7 +170,7 @@ function updateJerseyCity() {
           <a
             href="https://www.jerseycitynj.gov/jobs/jerseycityjobs"
             target="_blank"
-            >Employment Opportunities</a
+            >Employment</a
           >
         </div>`;
   about.innerHTML = `<h1>About Jersey City</h1>
@@ -236,52 +237,52 @@ function updateAtlanticCity() {
             <img src="/atlantic-city.jfif" alt="nj-logo" class="header-logo" />`;
   carousel.innerHTML = `<div class="mySlides fade">
             <div class="numbertext">1 / 10</div>
-            <img class="img1" src="/atlantic-city-img/greetings.png" />
+            <img class="img1" src="/atlantic-city-img/greetings.png" alt="atlantic-city-greetings"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">2 / 10</div>
-            <img class="img2" src="/atlantic-city-img/1.png" />
+            <img class="img2" src="/atlantic-city-img/1.png" alt="atlantic-city-img1"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">3 / 10</div>
-            <img class="img3" src="/atlantic-city-img/2.png" />
+            <img class="img3" src="/atlantic-city-img/2.png" alt="atlantic-city-img2"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">4 / 10</div>
-            <img class="img1" src="/atlantic-city-img/3.png" />
+            <img class="img1" src="/atlantic-city-img/3.png" alt="atlantic-city-img3"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">5 / 10</div>
-            <img class="img2" src="/atlantic-city-img/4.jpg" />
+            <img class="img2" src="/atlantic-city-img/4.jpg" alt="atlantic-city-img4"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">6 / 10</div>
-            <img class="img3" src="/atlantic-city-img/5.png" />
+            <img class="img3" src="/atlantic-city-img/5.png" alt="atlantic-city-img5"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">7 / 10</div>
-            <img class="img3" src="/atlantic-city-img/6.jpg" />
+            <img class="img3" src="/atlantic-city-img/6.jpg" alt="atlantic-city-img6"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">8 / 10</div>
-            <img class="img1" src="/atlantic-city-img/7.png" />
+            <img class="img1" src="/atlantic-city-img/7.png" alt="atlantic-city-img7"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">9 / 10</div>
-            <img class="img2" src="/atlantic-city-img/8.png" />
+            <img class="img2" src="/atlantic-city-img/8.png" alt="atlantic-city-img8"/>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">10 / 10</div>
-            <img class="img3" src="/atlantic-city-img/9.png" />
+            <img class="img3" src="/atlantic-city-img/9.png" alt="atlantic-city-img9"/>
           </div>`;
   services.innerHTML = `<div class="service-item">
               <i class="fas fa-paw"></i>
@@ -312,7 +313,7 @@ function updateAtlanticCity() {
               <a
                 href="https://www.governmentjobs.com/careers/atlanticcity"
                 target="_blank"
-                >Employment Opportunities</a
+                >Employment</a
               >
             </div>`;
   about.innerHTML = `<h1>About Atlantic City</h1>
@@ -377,52 +378,52 @@ function updateCapeMay() {
             <img src="/cape-may.png" alt="nj-logo" class="header-logo" />`;
   carousel.innerHTML = `<div class="mySlides fade">
                 <div class="numbertext">1 / 10</div>
-                <img class="img1" src="/cape-may-img/greetings.png" />
+                <img class="img1" src="/cape-may-img/greetings.png" alt="cape-may-greetings"/>
               </div>
     
               <div class="mySlides fade">
                 <div class="numbertext">2 / 10</div>
-                <img class="img2" src="/cape-may-img/1.png" />
+                <img class="img2" src="/cape-may-img/1.png" alt="cape-may-img1"/>
               </div>
     
               <div class="mySlides fade">
                 <div class="numbertext">3 / 10</div>
-                <img class="img3" src="/cape-may-img/2.png" />
+                <img class="img3" src="/cape-may-img/2.png" alt="cape-may-img2"/>
               </div>
               
               <div class="mySlides fade">
               <div class="numbertext">4 / 10</div>
-                <img class="img1" src="/cape-may-img/3.png" />
+                <img class="img1" src="/cape-may-img/3.png" alt="cape-may-img3"/>
               </div>
     
               <div class="mySlides fade">
                 <div class="numbertext">5 / 10</div>
-                <img class="img2" src="/cape-may-img/4.jpg" />
+                <img class="img2" src="/cape-may-img/4.jpg" alt="cape-may-img4"/>
               </div>
     
               <div class="mySlides fade">
                 <div class="numbertext">6 / 10</div>
-                <img class="img3" src="/cape-may-img/5.jpg" />
+                <img class="img3" src="/cape-may-img/5.jpg" alt="cape-may-img5"/>
               </div>
               
               <div class="mySlides fade">
               <div class="numbertext">7 / 10</div>
-                <img class="img1" src="/cape-may-img/6.jpg" />
+                <img class="img1" src="/cape-may-img/6.jpg" alt="cape-may-img6"/>
               </div>
     
               <div class="mySlides fade">
                 <div class="numbertext">8 / 10</div>
-                <img class="img2" src="/cape-may-img/7.png" />
+                <img class="img2" src="/cape-may-img/7.png" alt="cape-may-img7"/>
               </div>
     
               <div class="mySlides fade">
                 <div class="numbertext">9 / 10</div>
-                <img class="img3" src="/cape-may-img/8.jpg" />
+                <img class="img3" src="/cape-may-img/8.jpg" alt="cape-may-img8"/>
               </div>
               
               <div class="mySlides fade">
                 <div class="numbertext">10 / 10</div>
-                <img class="img3" src="/cape-may-img/9.png" />
+                <img class="img3" src="/cape-may-img/9.png" alt="cape-may-img9"/>
               </div>`;
   services.innerHTML = `<div class="service-item">
               <i class="fas fa-paw"></i>
@@ -453,7 +454,7 @@ function updateCapeMay() {
               <a
                 href="https://capemaycountynj.gov/Jobs.aspx"
                 target="_blank"
-                >Employment Opportunities</a
+                >Employment</a
               >
             </div>`;
   about.innerHTML = `<h1>About Cape May</h1>

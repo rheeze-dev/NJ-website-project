@@ -61,7 +61,7 @@ async function getNewsApi() {
       i = 0; // Reset i to 0 when it reaches the end of the list
     }
     getNewsApi(); // Recursive call to keep updating the news
-  }, 1000000); // 10 seconds interval
+  }, 10000); // 10 seconds interval
 }
 
 document.querySelector(

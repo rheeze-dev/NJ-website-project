@@ -89,19 +89,20 @@ const navLinks = {
 // Function to check and update the active class based on the URL
 function updateActiveClass() {
   const currentUrl = window.location.href;
+  console.log(window.location.pathname);
 
   // Remove active class from all nav links
   for (const key in navLinks) {
     navLinks[key].classList.remove("active");
   }
   // Check which URL matches and add the active class
-  if (currentUrl.includes("index.html")) {
+  if (window.location.pathname === "/" || currentUrl.includes("index")) {
     navLinks.home.classList.add("active");
-  } else if (currentUrl.includes("capital.html")) {
+  } else if (currentUrl.includes("capital")) {
     navLinks.capital.classList.add("active");
-  } else if (currentUrl.includes("cities.html")) {
+  } else if (currentUrl.includes("cities")) {
     navLinks.cities.classList.add("active");
-  } else if (currentUrl.includes("contact.html")) {
+  } else if (currentUrl.includes("contact")) {
     navLinks.contact.classList.add("active");
   }
 }

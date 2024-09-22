@@ -44,8 +44,6 @@ document
     const email = document.getElementById("email").value;
     const confirmEmail = document.getElementById("confirmEmail").value;
 
-    console.log(email);
-    console.log(confirmEmail);
     if (email !== confirmEmail) {
       alert("Email addresses do not match!");
       event.preventDefault(); // Prevent form submission

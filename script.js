@@ -24,13 +24,7 @@ let i = 0; // Declare i outside the function to keep its value across function c
 
 async function getNewsApi() {
   const response = await fetch(
-    "https://newsapi.org/v2/top-headlines?country=us&apiKey=212ca14d0aad4987b0759b2f4177c1e3",
-    {
-      method: "GET",
-      headers: {
-        "X-Api-Key": "212ca14d0aad4987b0759b2f4177c1e3",
-      },
-    }
+    "https://api.currentsapi.services/v1/latest-news?apiKey=C102zLzeRTk3-qAq7hZxPj4SBRQCvrY-jzUcNNSTJA2xlpEw"
   );
 
   if (!response.ok) {
@@ -45,19 +39,22 @@ async function getNewsApi() {
   // Display the news article at index i
   document.querySelector(
     "#content-api"
-  ).innerHTML = `<h4>${data.articles[i].description}</h4>`;
+  ).innerHTML = `<h4><b>${data.news[i].title}</b></h4>`;
 
-  document.querySelector("#info-api").innerHTML = `<h4>Published by ${
-    data.articles[i].source.name
-  } on ${new Date(data.articles[i].publishedAt).toLocaleDateString()}.`;
   document.querySelector(
-    "#author-api"
-  ).innerHTML = `<h4>Authors: ${data.articles[i].author}.
-  <a href="${data.articles[i].url}" target="_blank"> Click here to check news.</a></h4></h4>`;
+    "#info-api"
+  ).innerHTML = `<h4>${data.news[i].description}</h4>`;
+
+  document.querySelector("#author-api").innerHTML = `<h4>Published: ${new Date(
+    data.news[i].published
+  ).toLocaleDateString()}.
+  <a href="${
+    data.news[i].url
+  }" target="_blank"> Click here to check this news.</a></h4></h4>`;
   // Increase i after 10 seconds, and loop back if i exceeds the article count
   setTimeout(() => {
     i++;
-    if (i >= data.articles.length) {
+    if (i >= data.news.length) {
       i = 0; // Reset i to 0 when it reaches the end of the list
     }
     getNewsApi(); // Recursive call to keep updating the news

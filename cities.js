@@ -88,7 +88,6 @@ const atlanticCity = document.querySelector("#atlantic-city");
 const capeMay = document.querySelector("#cape-may");
 
 function updateJerseyCity() {
-  console.log("Clicked");
   header.innerHTML = `<span class="header-text">Welcome to Jersey City!</span>
           <img src="/jersey-city.png" alt="nj-logo" class="header-logo" />`;
   carousel.innerHTML = `<div class="mySlides fade">
@@ -232,7 +231,6 @@ function updateJerseyCity() {
 }
 
 function updateAtlanticCity() {
-  console.log("Clicked");
   header.innerHTML = `<span class="header-text">Welcome to Atlantic City!</span>
             <img src="/atlantic-city.jfif" alt="nj-logo" class="header-logo" />`;
   carousel.innerHTML = `<div class="mySlides fade">

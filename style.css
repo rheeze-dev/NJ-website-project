@@ -79,8 +79,6 @@ aside {
 .content5 {
   grid-area: content5;
   background-color: #f5f5f5;
-  text-align: center;
-  width: 100%;
 }
 
 .content6 {
@@ -92,6 +90,11 @@ footer {
   grid-area: footer;
   background-color: #f5f5f5;
   padding: 10px;
+}
+
+#socials {
+  text-align: center;
+  width: 100%;
 }
 
 .h3-text {
@@ -365,7 +368,7 @@ html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
-.header-container {
+#header-container {
   display: flex;
   align-items: center;
   justify-content: center;

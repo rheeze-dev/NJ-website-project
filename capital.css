@@ -69,15 +69,18 @@ aside {
 
 .content4 {
   grid-area: content4;
-  padding: 20px 20px 0 20px;
   background-color: #f5f5f5;
-  text-align: center;
 }
 
 footer {
   grid-area: footer;
   background-color: #f5f5f5;
   padding: 10px;
+}
+
+#socials {
+  padding: 20px 20px 0 20px;
+  text-align: center;
 }
 
 .icon-container {
@@ -344,7 +347,7 @@ html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
-.header-container {
+#header-container {
   display: flex;
   align-items: center;
   justify-content: center;

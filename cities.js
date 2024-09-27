@@ -77,7 +77,7 @@ Object.values(navLinks).forEach((link) => {
 // Event listener for URL changes (for back/forward navigation)
 window.addEventListener("popstate", updateActiveClass);
 
-const header = document.querySelector(".header-container");
+const header = document.querySelector("#header-container");
 const carousel = document.querySelector(".slideshow-container");
 const services = document.querySelector(".service-list");
 const socials = document.querySelector(".icon-container");
